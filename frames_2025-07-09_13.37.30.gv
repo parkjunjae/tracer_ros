@@ -1,0 +1,8 @@
+digraph G {
+"aft_mapped" -> "camera_init"[label=" Broadcaster: default_authority\nAverage rate: 1829.785\nBuffer length: 4.963\nMost recent transform: 1752035850.53659\nOldest transform: 1752035845.573711\n"];
+"map" -> "aft_mapped"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1752035850.657423"[ shape=plaintext ] ;
+}->"map";
+}
