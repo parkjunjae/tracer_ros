@@ -116,7 +116,7 @@ UnitreeLidarSDKNode::UnitreeLidarSDKNode(const rclcpp::NodeOptions& options)
   // ROS2
   pub_cloud_ = this->create_publisher<sensor_msgs::msg::PointCloud2>(cloud_topic_, 50);
   pub_imu_ = this->create_publisher<sensor_msgs::msg::Imu>(imu_topic_, 10);
-  timer_ = this->create_wall_timer(std::chrono::milliseconds(3), std::bind(&UnitreeLidarSDKNode::timer_callback, this));
+  timer_ = this->create_wall_timer(std::chrono::milliseconds(1), std::bind(&UnitreeLidarSDKNode::timer_callback, this));
 }
 
 void UnitreeLidarSDKNode::timer_callback()
